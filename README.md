@@ -9,7 +9,8 @@ A pipeline tem como objetivo obter dados de uma API externa que fornece cotaçõ
 A pipeline é composta por três atividades principais:
 
 Atividade "Web"
-A atividade "Web" consome a API externa que fornece dados de cotação de criptomoedas. Ela recebe como entrada uma URL que representa a chamada à API e retorna os dados da cotação em um formato JSON.
+A atividade "Web" consome a API externa que fornece dados de cotação de criptomoedas.
+Ela recebe como entrada uma URL que representa a chamada à API e retorna os dados da cotação em um formato JSON.
 
 Na pipeline em questão, a URL usada é https://economia.awesomeapi.com.br/last/BTC-BRL, que retorna os dados de cotação da criptomoeda Bitcoin (BTC) em relação ao real brasileiro (BRL).
 
@@ -32,7 +33,8 @@ A consulta SQL tem a seguinte sintaxe:
 
 sql
 Copy code
-INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
+'''INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
+
 Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores armazenados nas variáveis ativo, cotacao e data. A sintaxe @{variables('...')} é usada para acessar os valores das variáveis armazenadas pela atividade "Set Variable" e usá-los como parâmetros na consulta SQL.
 
 ### Fluxo de Execução

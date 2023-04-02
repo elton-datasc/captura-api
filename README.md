@@ -1,7 +1,7 @@
 # etl-ativos-moedas
 ETL realizado na cloud Azure consumindo dados de API's diversas
 
-### Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
+## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
 Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.
 

@@ -1,5 +1,5 @@
 # Projeto ETL 1.0 - etl-ativos-moedas
-### ETL realizado na cloud Azure consumindo dados de API's diversas
+### ETL realizado na cloud Azure consumindo dados de API
 
 ## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
 ### Objetivo

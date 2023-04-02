@@ -5,7 +5,11 @@
 ### Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.
 
+<div align="center">
+  
 ![Arquitetura](arq.JPG)
+  
+ </div>
 
 
 ### Atividades da pipeline - Definições

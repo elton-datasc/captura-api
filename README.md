@@ -58,6 +58,10 @@ Essa consulta insere os valores das variáveis "ativo", "cotacao" e "data" na ta
 
 Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores armazenados nas variáveis ativo, cotacao e data. A sintaxe @{variables('...')} é usada para acessar os valores das variáveis armazenadas pela atividade "Set Variable" e usá-los como parâmetros na consulta SQL.
 
+Id   | ativo | cotacao | data 
+---- | ----- |---------|-----
+
+
 ### Fluxo de Execução
 A atividade "Web" é executada e consome a API externa que fornece dados de cotação de criptomoedas.
 Os valores relevantes dos dados de cotação são extraídos pela atividade "Set Variable" e armazenados nas variáveis ativo, cotacao e data.

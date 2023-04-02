@@ -1,4 +1,4 @@
-# Projeto AZ 1.0 - Captura de dados de API
+# Projeto Az 1.0 - Captura de dados de API
 ### Consumo de dados de API utilizando tecnologias Azure - API disponível em https://economia.awesomeapi.com.br/last
 ### Parte de infra pré-configurada para o projeto:
 - Azure Data Factory

@@ -73,3 +73,7 @@ Os valores relevantes dos dados de cotação são extraídos pela atividade "Set
 A atividade "Script" é executada e insere os valores armazenados nas variáveis na tabela cotacoes do banco de dados.
 Conclusão
 A pipeline consome uma API externa que fornece dados de cotação de criptomoedas, extrai os valores relevantes dos dados e os armazena em variáveis, e insere esses valores em uma tabela SQL Server por meio de uma consulta SQL personalizada.
+
+![Fluxo do Pipeline](adfpipelineetlbtc.JPG)
+
+![Atividades Output](adfoutetlbtc.JPG)

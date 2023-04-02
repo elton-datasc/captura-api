@@ -1,6 +1,10 @@
-# Projeto ETL 1.0 - etl-ativo-btc
+# Projeto Captura de dados API 1.0 - ativo-btc
 <!-- ### ETL realizado na cloud Azure consumindo dados de API - Awesome API disponível em  --> https://economia.awesomeapi.com.br/last
-
+### Toda a parte de infra foi pré-configurada para o projeto:
+- Azure Data Factory
+- SQL Server e Azure SQL Database
+- Linked Services
+- Integration Runtime
 ## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
 ### Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.
@@ -13,7 +17,7 @@ A pipeline tem como objetivo obter dados de uma API externa que fornece cotaçõ
 
 
 ### Atividades da pipeline - Definições
-A pipeline é composta por três atividades principais:
+A pipeline é composta por três atividades :
 
 Atividade "Web"
 A atividade "Web" consome a API externa que fornece dados de cotação de criptomoedas.
@@ -87,7 +91,7 @@ Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores
 
 Exemplo de banco de dados populado:
 
-![Exemplo Banco de dados](bdetlbtc.JPG)
+![Exemplo Banco de dados](bdetl.JPG)
 
 
 ### Fluxo de Execução

@@ -45,6 +45,12 @@ A atividade Set Variable define três variáveis: "ativo", "cotacao" e "data", c
 @{activity('get_data_api').output.BTCBRL.ask}
 @{formatDateTime(activity('get_data_api').output.BTCBRL.create_date, 'yyyy-MM-dd HH:mm:ss')}
 
+Colunas esperadas:
+
+Id   | ativo | cotacao | data 
+---- | ----- |---------|-----
+
+## Pipeline
 
 ### Atividade Script
 
@@ -58,9 +64,7 @@ Essa consulta insere os valores das variáveis "ativo", "cotacao" e "data" na ta
 
 Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores armazenados nas variáveis ativo, cotacao e data. A sintaxe @{variables('...')} é usada para acessar os valores das variáveis armazenadas pela atividade "Set Variable" e usá-los como parâmetros na consulta SQL.
 
-Id   | ativo | cotacao | data 
----- | ----- |---------|-----
-
+Exemplo de banco de dados populado:
 
 ![Exemplo Banco de dados](bdetlbtc.JPG)
 

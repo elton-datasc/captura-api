@@ -72,8 +72,10 @@ A atividade "Web" é executada e consome a API externa que fornece dados de cota
 Os valores relevantes dos dados de cotação são extraídos pela atividade "Set Variable" e armazenados nas variáveis ativo, cotacao e data.
 A atividade "Script" é executada e insere os valores armazenados nas variáveis na tabela cotacoes do banco de dados.
 Conclusão
-A pipeline consome uma API externa que fornece dados de cotação de criptomoedas, extrai os valores relevantes dos dados e os armazena em variáveis, e insere esses valores em uma tabela SQL Server por meio de uma consulta SQL personalizada.
+A pipeline consome uma API externa que fornece dados de cotação de criptomoedas, extrai os valores relevantes dos dados e os armazena em variáveis, e insere esses valores em uma tabela SQL Server por meio de uma consulta SQL personalizada. A imagem abaixo ilustra o fluxo do pipeline do datafactory:
 
 ![Fluxo do Pipeline](adfpipelineetlbtc.JPG)
+
+Exemplo dos outoputs esperados:
 
 ![Atividades Output](adfoutetlbtc.JPG)

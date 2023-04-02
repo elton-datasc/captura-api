@@ -1,4 +1,4 @@
-# Projeto Captura de dados API 1.0 - ativo-btc
+# Projeto: Captura de dados API 1.0 - ativo-btc
 <!-- ### ETL realizado na cloud Azure consumindo dados de API - Awesome API disponível em  --> https://economia.awesomeapi.com.br/last
 ### Toda a parte de infra foi pré-configurada para o projeto:
 - Azure Data Factory

@@ -1,10 +1,11 @@
 # Projeto 1.0 - Captura de dados de API
 ### Consumo de dados de API utilizando tecnologias Azure - API disponível em https://economia.awesomeapi.com.br/last
-### Toda a parte de infra foi pré-configurada para o projeto:
+### Parte de infra pré-configurada para o projeto:
 - Azure Data Factory
 - SQL Server e Azure SQL Database
 - Linked Services
 - Integration Runtime
+- criação de tabela
 ## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
 ### Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.

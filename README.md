@@ -62,6 +62,9 @@ Id   | ativo | cotacao | data
 ---- | ----- |---------|-----
 
 
+![Exemplo Banco de dados](bdetlbtc.JPG)
+
+
 ### Fluxo de Execução
 A atividade "Web" é executada e consome a API externa que fornece dados de cotação de criptomoedas.
 Os valores relevantes dos dados de cotação são extraídos pela atividade "Set Variable" e armazenados nas variáveis ativo, cotacao e data.

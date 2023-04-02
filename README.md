@@ -51,7 +51,7 @@ A atividade Set Variable define três variáveis: "ativo", "cotacao" e "data", c
 A atividade Script executa uma consulta SQL para inserir os dados de cotação obtidos pela atividade Set Variable em uma tabela do banco de dados. Ela utiliza o seguinte código no campo "query" do setting:
 
 ```sql
-INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
+INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')```
 
 Essa consulta insere os valores das variáveis "ativo", "cotacao" e "data" na tabela "cotacoes" do banco de dados.
 

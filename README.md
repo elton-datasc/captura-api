@@ -31,6 +31,7 @@ A atividade "Script" insere os dados de cotação da criptomoeda em uma tabela S
 
 A consulta SQL tem a seguinte sintaxe:
 
+```sql
 INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
 
 

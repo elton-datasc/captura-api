@@ -54,8 +54,6 @@ A atividade "Script" insere os dados de cotação da criptomoeda em uma tabela S
 
 ![Atividade Script](atvscript.JPG)
 
-A consulta SQL tem a seguinte sintaxe:
-
 ## Pipeline de consumo de API de cotação de criptomoedas
 
 ### Atividade Web

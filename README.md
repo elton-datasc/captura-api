@@ -62,7 +62,7 @@ A atividade Web utiliza o método HTTP GET para acessar a API de cotação de cr
 
 ### Atividade Set Variable
 
-A atividade Set Variable define três variáveis: "ativo", "cotacao" e "data", com base nos dados obtidos pela atividade Web. Ela utiliza o seguinte código no campo "value" do setting:
+Na atividade Set Variable foram definidas três variáveis: "ativo", "cotacao" e "data", com base nos dados obtidos pela atividade Web. Ela utiliza o seguinte código no campo "value" do setting:
 
 @{activity('get_data_api').output.BTCBRL.code}
 @{activity('get_data_api').output.BTCBRL.ask}

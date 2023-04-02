@@ -12,6 +12,8 @@ Atividade "Web"
 A atividade "Web" consome a API externa que fornece dados de cotação de criptomoedas.
 Ela recebe como entrada uma URL que representa a chamada à API e retorna os dados da cotação em um formato JSON.
 
+![Atividade Web](atvweb.JPG)
+
 Na pipeline em questão, a URL usada é https://economia.awesomeapi.com.br/last/BTC-BRL, que retorna os dados de cotação da criptomoeda Bitcoin (BTC) em relação ao real brasileiro (BRL).
 
 Atividade "Set Variable"
@@ -21,13 +23,18 @@ A atividade "Set Variable" extrai os valores relevantes dos dados de cotação o
 Nesta pipeline, a atividade "Set Variable" armazena os seguintes valores em variáveis:
 
 ativo: a sigla da criptomoeda (BTC).
+![Atividade set var ativo](atvsetvaratv.JPG)
 cotacao: o valor da cotação da criptomoeda em relação ao real brasileiro.
+![Atividade set var cotacao](atvsetvarcot.JPG)
 data: a data e hora da cotação.
+![Atividade set var data](atvsetvardta.JPG)
 
 
 Atividade "Script"
 
 A atividade "Script" insere os dados de cotação da criptomoeda em uma tabela SQL Server por meio de uma consulta SQL personalizada.
+
+![Atividade Script](atvscript.JPG)
 
 A consulta SQL tem a seguinte sintaxe:
 

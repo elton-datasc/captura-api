@@ -109,4 +109,4 @@ Exemplo dos outoputs esperados:
 
 ![Atividades Output](adfoutetlbtc.JPG)
 
-Posteriormente a ideia é enriquecer o projeto, trabalhando com tecnologias diferentes (outras clouds e ferramentas open source) incluindo também ferramentas de vizualização e análise.
+Posteriormente a ideia é enriquecer o projeto, trabalhando outros ativos, com tratamento, e com tecnologias diferentes (outras clouds e ferramentas open source) incluindo também ferramentas de vizualização e análise.

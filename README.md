@@ -31,9 +31,29 @@ A atividade "Script" insere os dados de cotação da criptomoeda em uma tabela S
 
 A consulta SQL tem a seguinte sintaxe:
 
-```sql
-INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')'''
+## Pipeline de consumo de API de cotação de criptomoedas
 
+### Atividade Web
+
+A atividade Web utiliza o método HTTP GET para acessar a API de cotação de criptomoedas no seguinte endereço: https://economia.awesomeapi.com.br/last/BTC-BRL. Ela obtém os dados de cotação atualizados da criptomoeda Bitcoin em relação ao Real brasileiro.
+
+### Atividade Set Variable
+
+A atividade Set Variable define três variáveis: "ativo", "cotacao" e "data", com base nos dados obtidos pela atividade Web. Ela utiliza o seguinte código no campo "value" do setting:
+
+@{activity('get_data_api').output.BTCBRL.code}
+@{activity('get_data_api').output.BTCBRL.ask}
+@{formatDateTime(activity('get_data_api').output.BTCBRL.create_date, 'yyyy-MM-dd HH:mm:ss')}
+
+
+### Atividade Script
+
+A atividade Script executa uma consulta SQL para inserir os dados de cotação obtidos pela atividade Set Variable em uma tabela do banco de dados. Ela utiliza o seguinte código no campo "query" do setting:
+
+```sql
+INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
+
+Essa consulta insere os valores das variáveis "ativo", "cotacao" e "data" na tabela "cotacoes" do banco de dados.
 
 Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores armazenados nas variáveis ativo, cotacao e data. A sintaxe @{variables('...')} é usada para acessar os valores das variáveis armazenadas pela atividade "Set Variable" e usá-los como parâmetros na consulta SQL.
 

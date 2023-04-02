@@ -23,10 +23,15 @@ A atividade "Set Variable" extrai os valores relevantes dos dados de cotação o
 Nesta pipeline, a atividade "Set Variable" armazena os seguintes valores em variáveis:
 
 ativo: a sigla da criptomoeda (BTC).
+
 ![Atividade set var ativo](atvsetvaratv.JPG)
+
 cotacao: o valor da cotação da criptomoeda em relação ao real brasileiro.
+
 ![Atividade set var cotacao](atvsetvarcot.JPG)
+
 data: a data e hora da cotação.
+
 ![Atividade set var data](atvsetvardta.JPG)
 
 

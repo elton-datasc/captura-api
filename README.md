@@ -16,6 +16,10 @@ Ela recebe como entrada uma URL que representa a chamada à API e retorna os dad
 
 Na pipeline em questão, a URL usada é https://economia.awesomeapi.com.br/last/BTC-BRL, que retorna os dados de cotação da criptomoeda Bitcoin (BTC) em relação ao real brasileiro (BRL).
 
+~~~JSON
+{"BTCBRL":{"code":"BTC","codein":"BRL","name":"Bitcoin/Real Brasileiro","high":"145901","low":"143500","varBid":"-296","pctChange":"-0.2","bid":"144461","ask":"144508","timestamp":"1680460621","create_date":"2023-04-02 15:37:01"}}
+~~~
+
 Atividade "Set Variable"
 
 A atividade "Set Variable" extrai os valores relevantes dos dados de cotação obtidos pela atividade "Web" e os armazena em variáveis para uso posterior na pipeline.

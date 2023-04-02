@@ -108,3 +108,5 @@ A imagem abaixo ilustra o fluxo do pipeline do datafactory:
 Exemplo dos outoputs esperados:
 
 ![Atividades Output](adfoutetlbtc.JPG)
+
+Posteriormente a ideia é enriquecer o projeto, trabalhando com tecnologias diferentes (outras clouds e ferramentas open source) incluindo também ferramentas de vizualização e análise.

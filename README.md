@@ -2,10 +2,10 @@
 ETL realizado na cloud Azure consumindo dados de API's diversas
 
 ## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
-**Objetivo**
+### Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.
 
-Atividades da pipeline
+### Atividades da pipeline
 A pipeline é composta por três atividades principais:
 
 Atividade "Web"
@@ -31,7 +31,7 @@ Copy code
 INSERT INTO dbo.cotacoes (ativo, cotacao, data) VALUES ('@{variables('ativo')}', '@{variables('cotacao')}', '@{variables('data')}')
 Ela insere um novo registro na tabela cotacoes do banco de dados, com os valores armazenados nas variáveis ativo, cotacao e data. A sintaxe @{variables('...')} é usada para acessar os valores das variáveis armazenadas pela atividade "Set Variable" e usá-los como parâmetros na consulta SQL.
 
-Fluxo de Execução
+### Fluxo de Execução
 A atividade "Web" é executada e consome a API externa que fornece dados de cotação de criptomoedas.
 Os valores relevantes dos dados de cotação são extraídos pela atividade "Set Variable" e armazenados nas variáveis ativo, cotacao e data.
 A atividade "Script" é executada e insere os valores armazenados nas variáveis na tabela cotacoes do banco de dados.

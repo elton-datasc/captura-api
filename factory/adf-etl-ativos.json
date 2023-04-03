@@ -1,0 +1,9 @@
+{
+	"name": "adf-etl-ativos",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "87c10376-0361-44f9-a3a4-b9008c699169",
+		"tenantId": "cc1ec62c-0411-4afb-a12a-a1b2e028414a"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "ls_url_apibtc",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://economia.awesomeapi.com.br/last/BTC-BRL",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

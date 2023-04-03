@@ -1,0 +1,22 @@
+{
+	"name": "ls_azure_sql_db",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_az_key_vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "secret-db-azure"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SQLTeste",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

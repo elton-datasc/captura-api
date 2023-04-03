@@ -1,0 +1,19 @@
+{
+	"name": "ls_data_lake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://dlsetlativos.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_az_key_vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "secret-key-datalake"
+			}
+		}
+	}
+}

@@ -1,6 +1,5 @@
 {
 	"name": "ls_azure_sql_db",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureSqlDatabase",
@@ -18,5 +17,6 @@
 			"referenceName": "SQLTeste",
 			"type": "IntegrationRuntimeReference"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }

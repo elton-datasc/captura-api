@@ -4,17 +4,13 @@
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sql-etl-ativos-server.database.windows.net;Initial Catalog=sqldb-indicadores-cotacoes",
-			"credential": {
-				"referenceName": "uc_kv_linked",
-				"type": "CredentialReference"
-			},
-			"alwaysEncryptedSettings": {
-				"alwaysEncryptedAkvAuthType": "UserAssignedManagedIdentity",
-				"credential": {
-					"referenceName": "uc_kv_linked",
-					"type": "CredentialReference"
-				}
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_az_key_vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "secret-db-azure"
 			}
 		},
 		"connectVia": {

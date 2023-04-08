@@ -18,7 +18,7 @@ A pipeline tem como objetivo obter dados de uma API externa que fornece cotaçõ
 
 
 ### Atividades da pipeline - Definições
-A pipeline é composta por três atividades :
+O pipeline é composta por três atividades :
 
 Atividade "Web"
 A atividade "Web" consome a API externa que fornece dados de cotação de criptomoedas.

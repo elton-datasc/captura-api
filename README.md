@@ -5,7 +5,7 @@
 - SQL Server e Azure SQL Database
 - Linked Services
 - Integration Runtime
-- criação de tabela
+
 ## Consumindo API de cotação de criptomoedas e inserindo dados em tabela SQL Server
 ### Objetivo
 A pipeline tem como objetivo obter dados de uma API externa que fornece cotações de criptomoedas em tempo real e armazená-los em uma tabela SQL Server para posterior análise.
